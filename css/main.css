@@ -282,7 +282,7 @@ header {
       font-family: "Delius Unicase", cursive;
       position: absolute;
       left: 0;
-      top: 20em;
+      top: 50em;
       transition-property: top;
       transition-duration: 0.80s; }
   .content_destinations .image:hover span {
@@ -441,6 +441,6 @@ footer {
 
 @media screen and (max-width: 1200px) {
   .experiences, .logements, .destinations, .footer, .select_travel {
-    width: 94%; } }
+    width: 90%; } }
 
 /*# sourceMappingURL=main.css.map */
