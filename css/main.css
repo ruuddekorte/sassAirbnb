@@ -1,0 +1,446 @@
+body {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+.none {
+  display: none; }
+
+.block {
+  display: block; }
+
+.flex {
+  display: flex; }
+
+.space-between {
+  justify-content: space-between; }
+
+header {
+  background-image: url("http://lorempicsum.com/up/627/200/3");
+  background-size: cover;
+  min-height: 45vh; }
+  header .icone-plane {
+    font-size: 1.5rem;
+    z-index: 2;
+    position: relative;
+    padding: 0.75em;
+    color: #ff5a5f; }
+  header div {
+    position: relative; }
+  header .ordinateur {
+    display: none; }
+  header .menu-ordinateur {
+    display: none; }
+  header .menu-phone {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: none; }
+    header .menu-phone ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      header .menu-phone ul .home {
+        padding-top: 2rem; }
+      header .menu-phone ul li {
+        padding-left: 1rem;
+        line-height: 3rem; }
+        header .menu-phone ul li a {
+          font-size: 1.2rem;
+          color: #000;
+          text-decoration: none; }
+    header .menu-phone hr {
+      border: none;
+      height: 0.055rem;
+      background-color: #dce0e0;
+      width: 95%; }
+    header .menu-phone .li_hr {
+      padding: 0; }
+  header .content {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff; }
+    header .content p {
+      padding-bottom: 1em;
+      display: none; }
+    header .content a {
+      color: #fff;
+      text-decoration: none;
+      border-radius: 1rem;
+      padding: 0.5rem;
+      border: 0.1rem solid #fff; }
+      header .content a:hover {
+        border-color: #ff5a5f;
+        color: #ff5a5f; }
+
+@media screen and (min-width: 800px) {
+  header .ordinateur {
+    display: block !important; }
+  header .phone {
+    display: none; }
+  header .menu-phone {
+    display: none !important; }
+  header .menu-ordinateur {
+    display: flex !important;
+    justify-content: space-between; }
+    header .menu-ordinateur ul {
+      display: flex;
+      list-style: none; }
+      header .menu-ordinateur ul li {
+        padding-right: 2rem; }
+        header .menu-ordinateur ul li a {
+          color: #fff;
+          font-size: 0.8em; }
+          header .menu-ordinateur ul li a:hover {
+            color: #ff5a5f; }
+  header .content {
+    margin-left: 20%;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left; }
+    header .content p {
+      display: block !important;
+      padding-bottom: 1em; } }
+.select_travel {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em; }
+  .select_travel form {
+    display: flex; }
+    .select_travel form .field {
+      display: block;
+      width: 33%; }
+    .select_travel form input {
+      width: 95%;
+      height: 2.5em;
+      border: none;
+      outline: none;
+      font-size: 0.85em; }
+    .select_travel form ::-webkit-input-placeholder {
+      font-size: 0.85em;
+      color: #8b8687; }
+    .select_travel form input:focus {
+      border-bottom: 0.1em solid #5CAB7D; }
+    .select_travel form select {
+      width: 100%;
+      height: 2.9em;
+      border: none;
+      background-color: #fff;
+      color: #8b8687;
+      font-size: 0.85em;
+      outline: none; }
+      .select_travel form select:focus {
+        border-bottom: 0.1em solid #5CAB7D; }
+    .select_travel form .content_select {
+      width: 60%; }
+    .select_travel form button {
+      margin-left: 1%;
+      border-radius: 0.5em;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-right: 3%;
+      padding-left: 3%;
+      background-color: #ff5a5f;
+      border: none;
+      font-size: 0.75em;
+      color: #fff;
+      outline: none; }
+      .select_travel form button:hover {
+        background-color: #e00007; }
+    .select_travel form label {
+      display: block;
+      margin-bottom: 0.2em;
+      font-size: 18px; }
+    .select_travel form .when {
+      width: 47.5%; }
+  .select_travel .field {
+    border: 1px solid #E0E3DA;
+    padding: 0.75em; }
+  .select_travel .content_button {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #E0E3DA;
+    padding: 0.75em;
+    width: 33%; }
+  .select_travel .first_input {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-right: none; }
+  .select_travel .last_input {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-left: none; }
+
+.experiences {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em; }
+
+.content_experiences {
+  display: flex;
+  justify-content: space-between; }
+  .content_experiences div {
+    width: 24%; }
+
+@media screen and (max-width: 1200px) {
+  .experiences {
+    width: 94%; } }
+.logements {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em; }
+
+.content_logements {
+  display: flex;
+  justify-content: space-between; }
+  .content_logements div {
+    width: 32%; }
+  .content_logements .image {
+    width: 100%;
+    height: 16.5em;
+    background-size: cover; }
+  .content_logements .first {
+    background-image: url("http://lorempicsum.com/futurama/350/298/1"); }
+    .content_logements .first:hover {
+      animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 55.55em; }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-0.05em, 0, 0); }
+  20%, 80% {
+    transform: translate3d(0.1em, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-0.2em, 0, 0); }
+  40%, 60% {
+    transform: translate3d(0.2em, 0, 0); } }
+  .content_logements .second {
+    background-image: url("http://lorempicsum.com/futurama/627/298/4"); }
+    .content_logements .second:hover {
+      animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 55.55em; }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-0.05em, 0, 0); }
+  20%, 80% {
+    transform: translate3d(0.1em, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-0.2em, 0, 0); }
+  40%, 60% {
+    transform: translate3d(0.2em, 0, 0); } }
+  .content_logements .third {
+    background-image: url("http://lorempicsum.com/futurama/255/298/5"); }
+    .content_logements .third:hover {
+      animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 55.55em; }
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-0.05em, 0, 0); }
+  20%, 80% {
+    transform: translate3d(0.1em, 0, 0); }
+  30%, 50%, 70% {
+    transform: translate3d(-0.2em, 0, 0); }
+  40%, 60% {
+    transform: translate3d(0.2em, 0, 0); } }
+.destinations {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em; }
+
+.content_destinations {
+  display: flex;
+  justify-content: space-between; }
+  .content_destinations div {
+    width: 15.66%;
+    background-image: url(""); }
+  .content_destinations .image {
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+    position: relative;
+    overflow: hidden; }
+    .content_destinations .image span {
+      height: 4vh;
+      background-color: rgba(13, 7, 12, 0.8);
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      padding-top: 2vh;
+      font-family: "Delius Unicase", cursive;
+      position: absolute;
+      left: 0;
+      top: 20em;
+      transition-property: top;
+      transition-duration: 0.80s; }
+  .content_destinations .image:hover span {
+    top: 16.5em; }
+  .content_destinations .first {
+    background-image: url("http://lorempicsum.com/simpsons/127/325/3"); }
+  .content_destinations .second {
+    background-image: url("http://lorempicsum.com/futurama/127/325/4"); }
+  .content_destinations .third {
+    background-image: url("http://lorempicsum.com/simpsons/127/325/6"); }
+  .content_destinations .fourth {
+    background-image: url("http://lorempicsum.com/simpsons/127/325/5"); }
+  .content_destinations .fifth {
+    background-image: url("http://lorempicsum.com/nemo/127/325/3"); }
+  .content_destinations .sixth {
+    background-image: url("http://lorempicsum.com/rio/127/325/3"); }
+
+footer {
+  border-top: 0.1em solid #dce0e0;
+  min-height: 25vh;
+  margin-top: 5em; }
+
+.footer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh; }
+  .footer .menu {
+    display: flex; }
+    .footer .menu select {
+      display: block;
+      background-color: #fff;
+      border: 0.1em solid #dbdbdb;
+      color: #00848b;
+      width: 10em;
+      height: 2.5em;
+      font-size: inherit;
+      margin-bottom: 1em;
+      border-radius: 0.2em;
+      padding: 0.2em; }
+    .footer .menu ul {
+      margin: 0;
+      list-style: none; }
+    .footer .menu div {
+      width: 25%;
+      font-size: 0.75em; }
+      .footer .menu div a {
+        text-decoration: none;
+        color: #767676; }
+        .footer .menu div a:hover {
+          color: #00848b; }
+  .footer .copyright {
+    color: #767676;
+    font-size: 0.75em;
+    margin-bottom: 6vh; }
+    .footer .copyright .hr {
+      margin-bottom: 1.5em;
+      margin-top: 4em;
+      background-color: #dce0e0;
+      height: 0.1em;
+      border: none; }
+    .footer .copyright .icone_footer {
+      font-size: 2em;
+      vertical-align: middle; }
+    .footer .copyright .more_info ul {
+      display: flex;
+      list-style: none;
+      margin: 0; }
+    .footer .copyright .more_info li {
+      padding: 1em;
+      padding-top: 0; }
+      .footer .copyright .more_info li a {
+        text-decoration: none;
+        color: #767676; }
+        .footer .copyright .more_info li a:hover {
+          color: #00848b; }
+
+.tilter {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 23%;
+  height: 415px;
+  margin: 0;
+  color: #fff;
+  perspective: 1000px; }
+
+.tilter * {
+  pointer-events: none; }
+
+.tilter:hover,
+.tilter:focus {
+  color: #fff;
+  outline: none; }
+
+.tilter__figure,
+.tilter__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.tilter__figure > * {
+  transform: translateZ(0px);
+  /* Force correct stacking order */ }
+
+.tilter__figure {
+  position: relative; }
+
+.tilter__figure::before {
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5); }
+
+.tilter__deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+
+.tilter__deco--shine div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%; }
+
+.tilter__deco--lines {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px; }
+
+.tilter__caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4em; }
+
+.tilter__title {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0; }
+
+.tilter__description {
+  font-size: 0.85em;
+  margin: 1em 0 0 0;
+  letter-spacing: 0.15em; }
+
+@media screen and (max-width: 1200px) {
+  .experiences, .logements, .destinations, .footer, .select_travel {
+    width: 94%; } }
+
+/*# sourceMappingURL=main.css.map */
