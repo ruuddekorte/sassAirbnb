@@ -1,0 +1,17 @@
+@import 'variable';
+@import 'global';
+@import 'header';
+@import 'select_travel';
+@import 'experience';
+@import 'logements';
+@import 'destinations';
+@import 'footer';
+@import 'anim'; 
+
+@media screen and (max-width:1200px){
+	.experiences, .logements, .destinations, .footer, .select_travel{
+		width:94%;
+	}
+}
+
+

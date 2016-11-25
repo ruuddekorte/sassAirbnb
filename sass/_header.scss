@@ -1,0 +1,143 @@
+@import 'variable';
+
+header {
+	background-image: url('http://lorempicsum.com/up/627/200/3');
+	background-size:cover;
+	min-height:45vh;
+	.icone-plane {
+		font-size: 1.5rem;
+		z-index:2;
+		position:relative;
+		padding:0.75em;
+		color:$icon-color;
+	}
+
+	div {
+		position:relative;
+	}
+
+	.ordinateur {
+		display:none;
+	}
+
+	.menu-ordinateur {
+		display:none;
+	}
+	.menu-phone {
+		margin:0;
+		padding:0;
+		background-color:$secondary;
+		height:100vh;
+		width:100%;
+		position:absolute;
+		display:none;
+		ul{
+			list-style: none;
+			margin:0;
+			padding: 0;
+			.home {
+				padding-top:2rem;
+			}
+			li {
+				padding-left:1rem;
+				line-height: 3rem;
+				a {
+					font-size:1.2rem;
+					color:$primary;
+					text-decoration: none;
+				}
+			}
+		}
+
+		hr {
+			border:none;
+			height:$hr-height;
+			background-color:$color-hr;
+			width:95%;
+		}
+
+		.li_hr {
+			padding:0;
+		}
+
+	}
+
+	.content {
+		text-align: center;
+		font-size:1rem;
+		color:$secondary;
+
+		p{
+			padding-bottom: 1em;
+			display:none;
+		}
+
+		a {
+				color: $secondary;
+				text-decoration:none;
+				border-radius:1rem;
+				padding:0.5rem;
+				border:0.1rem solid $secondary;
+
+				&:hover {
+					border-color:$icon-color;
+					color:$icon-color;
+				}
+			}
+
+	}
+}
+
+@media screen and (min-width:800px){
+	header {
+		.ordinateur {
+			display:block !important;
+		}
+
+		.phone {
+			display: none;
+		}
+
+		.menu-phone {
+			display:none !important;
+		}
+
+		.menu-ordinateur{
+			display:flex !important;
+			justify-content: space-between;
+			ul {
+				display:flex ;
+				list-style: none;
+
+				li {
+
+					padding-right:2rem;
+					a {
+						color:$secondary;
+						font-size:0.8em;
+
+						&:hover {
+							color:$icon-color;
+						}
+
+					}
+
+				}
+			}
+			
+		}
+		.content {
+			margin-left:20%;
+			font-size:1rem;
+			color:$secondary;
+			text-align:left;
+
+			p{
+				display:block !important;
+				padding-bottom: 1em;
+			}
+
+
+		}
+	}
+}

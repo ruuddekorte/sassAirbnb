@@ -1,0 +1,25 @@
+@import 'variable';
+
+.experiences {
+	width:$body_width;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:$space_section;	
+}
+
+
+.content_experiences {
+	display:flex;
+	justify-content: space-between;
+	div{
+		width:24%;
+	}
+}
+
+
+
+@media screen and (max-width:1200px){
+	.experiences {
+		width:94%;
+	}
+}

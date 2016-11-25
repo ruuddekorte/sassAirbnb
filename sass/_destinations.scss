@@ -1,0 +1,73 @@
+@import 'variable';
+
+.destinations {
+	width:$body_width;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:$space_section;	
+}
+
+
+.content_destinations {
+	display:flex;
+	justify-content: space-between;
+	div{
+		width:15.66%;
+		background-image: url("")
+	}
+
+	.image {
+		width:100%;
+		height:20em;
+		background-size:cover;
+		position:relative;
+		overflow: hidden;
+		span {
+			height:4vh;
+			background-color:  rgba(13, 7, 12, 0.8);
+			width:100%;
+			color:$secondary-color;
+			text-align:center;
+			padding-top:2vh;
+			font-family: $destinations_family;
+			position:absolute;
+			left:0;
+			top:20em;
+			transition-property:top;
+			transition-duration: 0.80s;
+		}
+		 
+	}
+	.image:hover span{
+		top:16.5em;
+	}
+
+
+	.first {
+		background-image: url("http://lorempicsum.com/simpsons/127/325/3");
+		
+
+	}
+
+	.second {
+		background-image: url('http://lorempicsum.com/futurama/127/325/4');
+	}
+
+	.third {
+		background-image: url('http://lorempicsum.com/simpsons/127/325/6');
+	}
+
+	.fourth {
+		background-image: url('http://lorempicsum.com/simpsons/127/325/5');
+	}
+
+	.fifth {
+		background-image: url('http://lorempicsum.com/nemo/127/325/3');
+	}
+
+	.sixth {
+		background-image: url('http://lorempicsum.com/rio/127/325/3');
+	}
+}
+
+
