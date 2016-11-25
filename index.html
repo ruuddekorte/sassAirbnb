@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<div>
+			<div class="menu-phone">
+				<ul>
+					<li class='home'><a href="#">Page d'accueil</a></li>
+					<li class="li_hr"><hr/></li>
+					<li><a href="#">Téléchager l'application</a></li>
+					<li><a href="#">Devenez hôte</a></li>
+					<li><a href="#">Inscription</a></li>
+					<li><a href="#">Connexion</a></li>
+					<li class="li_hr"><hr/></li>
+					<li><a href="#">Aide</a></li>
+				</ul>		
+			</div>
+			<i id="icone-phone" class="icone-plane phone fa fa-paper-plane" aria-hidden="true"></i>
+			<div class="menu-ordinateur">
+				<i  class="icone-plane ordinateur fa fa-paper-plane" aria-hidden="true"></i>
+				<ul>
+					<li><a href="#">Devenez hôte</a></li>
+					<li><a href="#">Aide</a></li>
+					<li><a href="#">Inscription</a></li>
+					<li><a href="#">Connexion</a></li>		
+				</ul>		
+			</div>
+		</div>
+		<div class="content">
+			<h1>Airbnb experience</h1>
+			<p>Passez maitre dans l'art du shushi ou domptez les vagues en surf</p>
+			<a href="#">Voir les nouveautés</a>
+		</div>
+	</header>
+	<section class="select_travel">
+		<form>
+			<div class="field first_input">
+				<label for='where'>Où</label>
+				<input type="text" name="where" id="where" placeholder="Destination, ville, adresse">
+			</div>
+			<div class="field">
+				<label for='start'>Quand</label>
+				<input class="when" type="text" name="" id="start" placeholder="Arrivé">
+				<input class="when" type="text" name="" id="depart" placeholder="Départ">
+			</div>
+			<div class="content_button last_input">
+				<div class="content_select">
+					<label for='traveler'>Voyageurs</label>
+					<select name="traveler" id="traveler">
+						<option value="1">1 voyageur</option>
+						<option value="2">2</option>
+					</select>
+				</div>
+				<button type="submit">Rechercher</button>
+			</div>
+		</form>
+	</section>
+	<section class="experiences">
+		<h2>Expériences</h2>
+		<div class="content_experiences">
+		
+				<a href="#" id='experience_surf' class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="http://lorempicsum.com/futurama/400/600/1" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">2429€</h3>
+							<p class="tilter__description"> Surfing </p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			
+	
+				<a href="#" id='experience_cook' class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="http://lorempicsum.com/up/400/600/2" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">317€</h3>
+							<p class="tilter__description"> Cheese & cooking </p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" id='experience_entrepeneur' class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="http://lorempicsum.com/simpsons/400/600/4" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">175€</h3>
+							<p class="tilter__description"> Entrepeneurship </p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+				<a href="#" id='experience_virtual' class="tilter tilter--2">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="http://lorempicsum.com/nemo/400/600/1" alt="img03" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<div class="tilter__deco tilter__deco--overlay"></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">193€</h3>
+							<p class="tilter__description"> Virtual reality </p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+			
+		</div>
+	</section>
+	<section class="logements">
+		<h2>Logements</h2>
+		<div class="content_logements">
+			<div>
+				<div class="image first"></div>
+				<p><span class="bold">96€</span><span class="little"> Logement entier à La Nouvelle-Orléans</span></p>
+			</div>
+			<div>
+				<div class="image second"></div>
+				<p><span class="bold">70€</span><span class="little"> Logement entier à Bellecombe-en-Bauges</span></p>
+			</div>
+			<div>
+				<div class="image third"></div>
+				<p><span class="bold">58€</span><span class="little"> Logement entier à Hvar</span></p>
+			</div>
+		</div>
+	</section>
+	<section class="destinations">
+		<h2>Destinations à la une</h2>
+		<div class="content_destinations">
+			<div>
+				<div class="image first">
+					<span>
+						Tokyo 
+					</span>
+				</div>
+				<span class="bold">Tokyo</span> 
+			</div>
+			<div>
+				<div class="image second">
+					<span>
+						Le cap
+					</span>
+				</div>
+				<span class="bold">Le cap</span>
+			</div>
+			<div>
+				<div class="image third">
+					<span>
+						Londres 
+					</span>
+				</div>
+				<span class="bold">Londres</span>
+			</div>
+			<div>
+				<div class="image fourth">
+					<span>
+						Séoul 
+					</span>
+				</div>
+				<span class="bold">Séoul</span>
+			</div>
+			<div>
+				<div class="image fifth">
+					<span>
+						Miami
+					</span>
+				</div>
+				<span class="bold">Miami</span>
+			</div>
+			<div>
+				<div class="image sixth">
+					<span>
+						Paris
+					</span>
+				</div>
+				<span class="bold">Paris</span>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer">
+			<div class="menu">
+				<div class="footer_select">
+					<select name="langue" class="langue">
+						<option value="Français">Français</option>
+						<option value="Anglais">English</option>
+					</select>
+					<select name="devise" class="devise">
+						<option value="eur">EUR</option>
+						<option value="aed">AED</option>
+					</select>
+				</div>
+				<div>
+					<ul>
+						<li><h3>Airbnb</h3></li>
+						<li><a href="#">A propos</a></li>
+						<li><a href="#">Carrières</a></li>
+						<li><a href="#">Presse</a></li>
+						<li><a href="#">Règles</a></li>
+						<li><a href="#">Aide</a></li>
+					</ul>
+				</div>
+				<div>
+				    <ul>
+						<li><h3>Découvrir</h3></li>
+						<li><a href="#">Confiance et sécurité</a></li>
+						<li><a href="#">Crédit voyage</a></li>
+						<li><a href="#">Airbnb Action</a></li>
+						<li><a href="#">Voyage d'affaires</a></li>
+						<li><a href="#">Guides</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><h3>Hébergement</h3></li>
+						<li><a href="#">Pourquoi être hôte</a></li>
+						<li><a href="#">Hospitalité</a></li>
+						<li><a href="#">Hébergement responsable</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">
+				<hr  class="hr" />
+				<div class="flex space-between">
+					<div>
+						<i class="icone_footer fa fa-paper-plane" aria-hidden="true"></i>
+						<span class="padding-left">© Airbnb, Inc.</span>
+					</div>
+					<div class="more_info">
+						<ul>
+							<li><a href="#">Conditions générales et confidentialité</a></li>
+							<li><a href="#">Plan du site</a></li>
+							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script   src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src='js/app.js'></script>
+	<script src="node_modules/animejs/anime.js"></script>
+	<script src="main.js"></script>
+	<script type='text/javascript'>
+		new TiltFx(document.querySelector('#experience_cook'), [options]);
+		new TiltFx(document.querySelector('#experience_surf'), [options]);
+		new TiltFx(document.querySelector('#experience_entrepeneur'), [options]);
+		new TiltFx(document.querySelector('#experience_virtual'), [options]);
+		var options = {
+			movement: {
+				imgWrapper : {
+					translation:{x: 10, y:10, z:30},
+					rotation : {x:0, y: -10, z : 0},
+					reverseAnimation : {duration: 200, easing: 'easeOutQuad'}
+				},
+
+				lines : {
+					translation : {x:10, y: 10, z: [0,70]},
+					rotation : {x: 0, y: 0, z: -2},
+					reverseAnimation : {duration: 2000, easing: 'easeOutExpo'}
+				},
+
+				caption : {
+					rotation : {x: 0, y: 0, z:2},
+					reverseAnimation: {duration: 200, easing: 'easeOutQuad'}
+				},
+
+				overlay : {
+					translation : {x: 10, y: -10, z:0},
+					rotation : {x: 0, y:0, z:2},
+					reverseAnimation : {duration: 2000, easing: 'easeOutExpo'}
+				},
+
+				shine : {
+					translation : {x: 100, y: 100, z: 0},
+					reverseAnimation : {duration: 200, easing: 'easeOutQuad'}
+				}
+			}
+		}
+	</script>
+</body>
+</html>
+
+	
